@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/index',[UdemyController::class, 'index']);
+Route::get('/addpost',[UdemyController::class, 'addPost']);
+Route::post('/createpost',[UdemyController::class, 'createPost'])->name('createpost');
